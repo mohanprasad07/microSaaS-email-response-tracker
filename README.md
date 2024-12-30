@@ -89,58 +89,7 @@ def send_email():
         server.login(sender_email, "yourpassword")
         server.sendmail(sender_email, receiver_email, msg.as_string())
 
-    return "Email sent!"
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Response Tracker</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Email Response Tracker</h1>
-        <p>Track your sent emails and get notified if no response is received within the set time.</p>
-        <button onclick="sendEmail()">Send Test Email</button>
-    </div>
-    
-    <script>
-        function sendEmail() {
-            fetch('/send_email')
-                .then(response => response.text())
-                .then(data => alert(data));
-        }
-    </script>
-</body>
-</html>
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    width: 50%;
-    margin: 50px auto;
-    text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
+    return "Email sent!"![Screenshot_30-12-2024_195940_127 0 0 1](https://github.com/user-attachments/assets/b7770211-1913-414a-8d29-d75a9eddc4b4)
 
 
+![Screenshot_30-12-2024_195940_127 0 0 1](https://github.com/user-attachments/assets/afdbbc69-42bb-47fd-819b-8b0205019b4a)
